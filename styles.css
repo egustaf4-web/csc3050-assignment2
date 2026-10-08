@@ -1,0 +1,53 @@
+:root {
+    --accent: #c2774b;
+    --card-background: #fff2ea;
+    --page-background: #ffffff;
+    --space: 1rem;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: var(--page-background);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: var(--space);
+}
+
+h3 {
+    color: #653315;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: var(--space);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    background-color: var(--accent);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
